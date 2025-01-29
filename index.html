@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Mock Trading</title> 
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body> 
+    <!-- Header --> 
+    <header> 
+        <h1>The Trading Classroom: Your First Step into the World of Trading!</h1> 
+        <nav> 
+            <button onclick="navigate('home')">Home</button> 
+            <button onclick="navigate('basics-of-trading')">Stock Basics</button> 
+            <button onclick="navigate('dashboard')">Trade</button> 
+            <button onclick="navigate('portfolio')">Portfolio</button> 
+        </nav> 
+    </header> 
+    
+    <!-- Main Content --> 
+    <main> 
+        <section id="home"> 
+            <h2>Welcome! Unlock Your Trading Potential</h2> 
+            <p>Learn the basics of trading by buying and selling mock stocks.</p> 
+            <button onclick="navigate('dashboard')">Start Trading</button> 
+        </section> 
+
+        <section id="basics-of-trading"> 
+            <h2>TRADE BASICS</h2> 
+            <p>Trading involves buying and selling financial assets like stocks, bonds, and currencies to earn a profit. Below are some fundamental concepts to help you get started:</p> 
+            <ul> 
+                <li><strong>Stock Market:</strong> A platform where shares of companies are bought and sold.</li> 
+                <li><strong>Types of Trading:</strong>  
+                    <ul> 
+                        <li>Day Trading: Buying and selling within the same day.</li> 
+                        <li>Swing Trading: Holding positions for a few days to weeks.</li>                         
+                        <li>Long-Term Investing: Holding assets for months or years.</li> 
+                    </ul> 
+                </li> 
+                <li><strong>Key Terms:</strong>  
+                    <ul> 
+                        <li><strong>Broker:</strong> A platform or individual that facilitates trades.</li> 
+                        <li><strong>Buy/Sell Orders:</strong> Instructions to purchase or sell an asset at a specific price.</li> 
+                        <li><strong>Stop-Loss:</strong> A tool to minimize losses by setting a threshold.</li> 
+                        <li><strong>Leverage:</strong> Borrowing funds to amplify potential returns (and risks).</li> 
+                        <li><strong>Market Volatility:</strong> The degree of price fluctuations in the market.</li> 
+                        <li><strong>Bid/Ask Spread:</strong> The difference between the buying and selling price.</li> 
+                    </ul> 
+                </li> 
+                <li><strong>Start Small:</strong> Use demo accounts to practice trading without risking real money.</li> 
+                <li><strong>Technical Analysis:</strong>  
+                    <ul> 
+                        <li>Analyzing price charts to identify patterns and trends.</li> 
+                        <li>Common tools: Moving Averages, RSI (Relative Strength Index), Bollinger Bands.</li> 
+                    </ul> 
+                </li> 
+            <li><strong>Fundamental Analysis:</strong> Evaluating the financial health and prospects of a company.</li> 
+                <li><strong>Risk Management:</strong>  
+                    <ul> 
+                        <li>Never risk more than 1-2% of your trading capital per trade.</li> 
+                        <li>Always set stop-loss levels to limit potential losses.</li> 
+                    </ul> 
+                </li> 
+                <li><strong>Emotional Discipline:</strong> Avoid trading based on fear or greed; stick to your strategy.</li> 
+                <li><strong>Keep Updated:</strong> Stay informed about global news and economic trends that affect markets.</li> 
+            </ul> 
+            <p>Remember, Trading involves risks. Always do thorough research before investing.</p> 
+            <img src="https://cdn-icons-png.flaticon.com/512/5266/5266959.png" alt="Stock Market Graph" width="300"> 
+        </section> 
+
+        <section id="dashboard"> 
+            <h2>TRADING DASHBOARD</h2> 
+            <p>Balance: $<span id="balance">10000</span></p> 
+            <div id="stocks"></div> 
+            <img id="right-image" src="https://clipart-library.com/2023/sticker-template-with-portraitstudent-girl-school-uniform_1308-63582.jpg" alt="Trade Image"> 
+        </section> 
+
+        <section id="portfolio"> 
+            <h2>YOUR PORTFOLIO</h2> 
+            <div id="portfolio-list"></div> 
+        </section> 
+    </main> 
+
+    <footer> 
+        <p>© 2025 Mock Trading Website</p> 
+    </footer> 
+    
+    <script src="script.js"></script> 
+</body> 
+</html>
