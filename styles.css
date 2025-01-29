@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(to right, #050505, #050505);
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    animation: slide-in 1s ease-out;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav button {
+    background: rgba(255, 165, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover {
+    background: #540202;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    display: none;
+}
+
+section#home {
+    display: block;
+    position: relative;
+    height: 100vh;
+    background: url('https://raionlabs.com/wp-content/uploads/2022/11/Insights-Photo-1a-1.png') no-repeat center center;
+    background-color: none;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+section#home h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+section#home p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+section#home button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff1e44;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section#home button:hover {
+    background-color: #00000080;
+}
+
+section#basics-of-trading {
+    padding: 20px;
+    text-align: left;
+    background: url('https://static.vecteezy.com/system/resources/previews/025/751/358/original/successful-stockmarket-wallpaper-improved-business-information-and-financial-growth-data-business-growthbackground-with-the-bar-chart-static-and-up-arrow-financial-data-strategy-free-vector.jpg') norepeat center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+}
+
+footer {
+    margin-top: 20px;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.stock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.stock img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.portfolio-stock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #222;
+}
+
+.portfolio-stock img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.portfolio-stock p {
+    margin: 0;
+}
+
+#dashboard {
+    position: relative;
+}
+
+#right-image {
+    position: absolute;
+   
